@@ -20,15 +20,15 @@ public class GraficoHTML {
 				"\r\n" + 
 				"      var data = new google.visualization.DataTable();\r\n" + 
 				"      data.addColumn('number', 'Dia');\r\n" + 
-				"      data.addColumn('number', 'Número de vendas por dia');\r\n" + 
+				"      data.addColumn('number', 'Distância percorrida');\r\n" + 
 
 				"\r\n" + 
 				"      data.addRows([\r\n" + 	retornaDados(vetor) +		"      ]);\r\n" + 
 				"\r\n" + 
 				"      var options = {\r\n" + 
 				"        chart: {\r\n" + 
-				"          title: 'Número de vendas por tempo de lançamento',\r\n" + 
-				"          subtitle: 'Por dia de lançamento'\r\n" + 
+				"          title: 'Acompanhamento de Treino de Corrida',\r\n" + 
+				"          subtitle: 'Distância percorrida diária'\r\n" + 
 				"        },\r\n" + 
 				"        width: 900,\r\n" + 
 				"        height: 500,\r\n" + 
@@ -53,11 +53,11 @@ public class GraficoHTML {
 				"";
 		
 		
-		FileWriter arq = new FileWriter("C:\\Users\\Unifique\\Documents\\grafico.html");
-	    PrintWriter gravarArq = new PrintWriter(arq);
+		FileWriter arquivo = new FileWriter("C:\\Program Files (x86)\\Google Charts");
+	    PrintWriter gravarArquivo = new PrintWriter(arquivo);
 	 
-	    gravarArq.printf(html);
-	    arq.close();
+	    gravarArquivo.printf(html);
+	    arquivo.close();
 	}
 	
 	
