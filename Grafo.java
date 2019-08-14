@@ -11,13 +11,6 @@ public class Grafo {
 		public void setVetor(int[] vetor) {
 			this.vetor = vetor;
 		}
-		
-//		public Grafico() {
-////			vetor = new int[];
-//		}
-		
-		
-		
-		
+				
 	}
 
